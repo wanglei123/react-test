@@ -7,25 +7,32 @@
  * @description  : 依赖于在useEffect中变化的状态，如何避免频繁渲染
  */
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export default function Test1 (){
 
   const [count, setCount] = useState(0)
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      console.log({count})
-      setCount(n => n + 1)
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     console.log({count})
+  //     setCount(n => n + 1)
+  //   }, 1000)
+  //   return () => {
+  //     clearInterval(interval)
+  //   }
+  // }, [])
+
+  const test = () => {
+    setTimeout(() => {
+      alert(count)
     }, 1000)
-    return () => {
-      clearInterval(interval)
-    }
-  }, [])
+  }
 
   return <>
+    <button onClick={() => setCount(count + 1)}>加1</button>
     <div>Count: {count}</div>
-    <div>测试git</div>
+    <button onClick={test}>alert</button>
     <div>123123</div>
   </>
 
