@@ -2,7 +2,7 @@
  * @Author       : wanglei
  * @Date         : 2022-06-18 14:43:50
  * @LastEditors  : wanglei
- * @LastEditTime : 2022-07-06 09:49:02
+ * @LastEditTime : 2022-07-07 16:40:24
  * @FilePath     : /react-test/src/App.js
  * @description  : 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -13,6 +13,7 @@ import Test2 from './components/effect02';
 import RefExample from './components/refExample';
 import CountUseReducer from './components/countUseReducer'
 import TsComponent from './components/TsComponent'
+import UseContextComponent from './components/UseContextComponent'
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
     <hr />
     <h3>一个nice的ts组件</h3>
     <TsComponent />
+    <h3>useContext</h3>
+    <UseContextComponent />
     </div>
   );
 }
