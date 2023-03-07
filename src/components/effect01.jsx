@@ -25,6 +25,7 @@ export default function Test1 (){
   // }, [])
 
   useEffect(() => {
+    console.log('这里是useEffect里的count', count)
     setTimeout(() => {
       console.log('setTimeout里的count',{count}) // 拿到的只是那次渲染的值，state, props,事件, useEffect，每次渲染都是独立的
     }, 3000)
