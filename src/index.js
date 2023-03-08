@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import {createBrowserRouter, RouterProvider,} from "react-router-dom";
 import Root from './routes/root'
 import ErrorPage from './error-page'
-import Contract from './routes/contract'
+import Effect from '../src/pages/effect'
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
@@ -14,8 +14,8 @@ const router = createBrowserRouter([
 		errorElement: <ErrorPage />,
 		children: [
 			{
-				path: "contacts/:contactId",
-				element: <Contract />,
+				path: "useEffect",
+				element: <Effect />,
 			},
 		],
 	},

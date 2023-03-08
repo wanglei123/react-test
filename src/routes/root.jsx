@@ -7,10 +7,10 @@ export default function Root() {
 				<nav>
 					<ul>
 						<li>
-							<Link to={`contacts/1`}></Link>
+							<Link to={`useEffect`}>useEffect</Link>
 						</li>
 						<li>
-							<Link to={`contacts/2`}>Your Friend</Link>
+							<Link to={`useContext`}>useContext</Link>
 						</li>
 					</ul>
 				</nav>
